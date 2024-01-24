@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hokka</title>
+    <!-- tailwind and daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+            src="https://kit.fontawesome.com/d7b7563d24.js"
+            crossorigin="anonymous"
+        ></script>
+    <!-- google font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind custom-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bike-primary": "#E76F51",
+              "btn-primary-bg": "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="md:container md:mx-auto">
+      <!-- navbar section -->
+      <nav class="mt-12">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm font-bold dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl lg:text-5xl font-extrabold"
+              >Hockey<span class="text-[#FF4240]">'</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal font-bold px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <i class="fa-solid fa-magnifying-glass mr-4 invisible lg:visible"></i>
+            <a class="btn bg-btn-primary-bg lg:text-xl lg:font-bold text-white">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section>
+        <div class="carousel w-full h-[200px] lg:h-[550px] mt-12">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="absolute bg-black text-white lg:right-0 lg:bottom-0 lg:mb-10 lg:mr-10 lg:p-10 p-5 -bottom-52 rounded-2xl space-y-3">
+                <h2 class="text-sm lg:text-2xl font-bold">Meet all the heroes from the field</h2>
+            <p class="text-[#FFFFFF99]"> It seems like your input "hokey club" might be a typo or an
+              incomplete query. If you have a specific question <br />or topic
+              related to "hockey" or "club" that you'd like </p>
+            </div>
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="absolute bg-black text-white lg:right-0 lg:bottom-0 lg:mb-10 lg:mr-10 lg:p-10 p-5 -bottom-52 rounded-2xl space-y-3">
+                <h2 class="text-2xl font-bold">Meet all the heroes from the field</h2>
+            <p class="text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
+                turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <img src="Images/2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="absolute bg-black text-white lg:right-0 lg:bottom-0 lg:mb-10 lg:mr-10 lg:p-10 p-5 -bottom-52 rounded-2xl space-y-3">
+                <h2 class="text-2xl font-bold">Meet all the heroes from the field</h2>
+            <p class="text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
+                turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <img src="Images/3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="absolute bg-black text-white lg:right-0 lg:bottom-0 lg:mb-10 lg:mr-10 lg:p-10 p-5 -bottom-52 rounded-2xl space-y-3">
+                <h2 class="text-2xl font-bold">Meet all the heroes from the field</h2>
+            <p class="text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
+                turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <img src="Images/4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- header end -->
+    <!-- main section -->
+    <main class="lg:container lg:mx-auto">
+      <!-- hockey club section -->
+      <section>
+        <div class="text-center mt-32 text-center border-dashed border-b-2 border-t-2 p-10">
+          <h1 class="text-2xl lg:text-5xl font-bold">Professional Hockeys Club</h1>
+          <p class="text-base font-medium text-[#13131899] mt-6">
+            It seems like your input "hokey club" might be a typo or an
+            incomplete query. If you have a specific question <br />or topic
+            related to "hockey" or "club" that you'd like
+          </p>
+        </div>
+        <div class="flex flex-col lg:flex-row text-center mt-12">
+          <div class="p-8">
+            <div
+              class="radial-progress text-2xl font-bold text-[#FF4240]"
+              style="--value: 87"
+              role="progressbar"
+            >
+              <span class="text-[black]">87%</span>
+            </div>
+            <h3 class="text-xl font-semibold mt-6">Prayer Facility</h3>
+            <p class="text-[#13131899] mt-4">
+              It seems like your input "hokey club" might be a typo or an
+            incomplete query.
+            </p>
+          </div>
+          <div class="p-8">
+            <div
+              class="radial-progress text-2xl font-bold text-[#49D293]"
+              style="--value: 95"
+              role="progressbar"
+            >
+              <span class="text-[black]">95%</span>
+            </div>
+            <h3 class="text-xl font-semibold mt-6">Experienced Coach</h3>
+            <p class="text-[#13131899] mt-4">
+              It seems like your input "hokey club" might be a typo or an
+            incomplete query.
+            </p>
+          </div>
+          <div class="p-8">
+            <div
+              class="radial-progress text-2xl font-bold text-[#FFB546]"
+              style="--value: 90"
+              role="progressbar"
+            >
+              <span class="text-[black]">90%</span>
+            </div>
+            <h3 class="text-xl font-semibold mt-6">Senior Player</h3>
+            <p class="text-[#13131899] mt-4">
+              It seems like your input "hokey club" might be a typo or an
+            incomplete query.
+            </p>
+          </div>
+          <div class="p-8">
+            <div
+              class="radial-progress text-2xl font-bold text-[#4C8DF1]"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="text-[black]">80%</span>
+            </div>
+            <h3 class="text-xl font-semibold mt-6">Training Ground</h3>
+            <p class="text-[#13131899] mt-4">
+              It seems like your input "hokey club" might be a typo or an
+            incomplete query.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Program Sections -->
+      <section class="space-y-10">
+        <div class="text-center mt-32 text-center border-dashed border-b-2 border-t-2 p-10">
+          <h1 class="text-2xl lg:text-5xl font-bold">Program Sections</h1>
+          <p class="text-base font-medium text-[#13131899] mt-6">
+            It seems like your input "hokey club" might be a typo or an
+            incomplete query. If you have a specific question <br />or topic
+            related to "hockey" or "club" that you'd like
+          </p>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-center mt-20 gap-10">
+          <div class="card lg:w-1/2 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img class="w-full"
+                src="Images/2.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body p-[80px] pl-[40px]">
+              <h2 class="card-title mt-16 text-3xl font-bold">Junior Program</h2>
+              <p> 
+                It seems like your input "hokey club" might be a typo or an
+                incomplete query. If you have a specific question <br />or topic
+                related to "hockey" or "club" that you'd like
+              </p>
+              <div class="card-actions mb-16">
+                <button class="btn bg-btn-primary-bg border-none">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="card lg:w-1/2 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img class="w-full"
+                src="Images/3.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body p-[80px] pl-[40px]">
+              <h2 class="card-title mt-16 text-3xl font-bold">Teenager Program</h2>
+              <p> It seems like your input "hokey club" might be a typo or an
+                incomplete query. If you have a specific question <br />or topic
+                related to "hockey" or "club" that you'd like</p>
+              <div class="card-actions mb-16">
+                <button class="btn bg-btn-primary-bg border-none">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="card w-full bg-base-100 shadow-xl image-full">
+            <figure>
+              <img class="w-full"
+                src="Images/4.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body pl-[40px] pt-[420px] pb-[40px]">
+              <h2 class="card-title text-3xl font-bold">Professional Program</h2>
+              <p> It seems like your input "hokey club" might be a typo or an
+                incomplete query. If you have a specific question <br />or topic
+                related to "hockey" or "club" that you'd like</p>
+              <div class="card-actions">
+                <button class="btn bg-btn-primary-bg border-none">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- oue new product -->
+      <section class="my-24 container mx-auto">
+        <div>
+            <div
+                class="text-center border-dashed border-b-2 border-t-2 p-10"
+            >
+                <h1 class="text-2xl lg:text-5xl lg:text-5xl font-extrabold">
+                    Our New Products
+                </h1>
+                <p class="my-10">
+                  It seems like your input "hokey club" might be a typo or an
+                  incomplete query. If you have a specific question <br />or topic
+                  related to "hockey" or "club" that you'd like
+                </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
+            <!-- product1 -->
+            <div class="lg:flex flex-row-reverse lg:flex-row gap-4 p-8 items-center text-center border-solid border-2 border-gray-200 rounded-xl">
+                <div class="flex justify-center">
+                    <img src="Images/5.png" alt="">
+                </div>
+                <div>
+                    <div class="rating gap-2">
+                        <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                        /> <span class="mt-1">5.0 <i class="fa-solid fa-eye pl-2"></i> 20 <i class="fa-regular fa-heart pl-2"></i>200</span>
+                    </div>
+                    <div class="py-2">
+                        <h4 class="text-2xl font-bold">World Cup Flags Football</h4>
+                        <p> It seems like your input "hokey club" might <br>be a typo or an
+                          incomplete query.</p>
+                    </div>
+                    <div class=" lg:flex gap-8">
+                        <h5 class="text-[#FF4240] text-xl font-bold">Price-$22.00</h5>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee: Free
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+             <!-- product2 -->
+            <div class="lg:flex flex-row-reverse lg:flex-row gap-4 p-8 items-center text-center border-solid border-2 border-gray-200 rounded-xl">
+                <div class="flex justify-center">
+                    <img src="Images/6.png" alt="">
+                </div>
+                <div>
+                    <div class="rating gap-2">
+                        <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                        /> <span class="mt-1">5.0 <i class="fa-solid fa-eye pl-2"></i> 20 <i class="fa-regular fa-heart pl-2"></i>200</span>
+                    </div>
+                    <div class="py-2">
+                        <h4 class="text-2xl font-bold">World Cup Flags Football</h4>
+                        <p>It seems like your input "hokey club" might <br>be a typo or an
+                          incomplete query. </p>
+                    </div>
+                    <div class=" lg:flex gap-8">
+                        <h5 class="text-[#FF4240] text-xl font-bold">Price-$22.00</h5>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee: Free
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+             <!-- product3 -->
+            <div class="lg:flex flex-row-reverse lg:flex-row gap-4 p-8 items-center text-center border-solid border-2 border-gray-200 rounded-xl">
+                <div class="flex justify-center">
+                    <img src="Images/7.png" alt="">
+                </div>
+                <div>
+                    <div class="rating gap-2">
+                        <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                        /> <span class="mt-1">5.0 <i class="fa-solid fa-eye pl-2"></i> 20 <i class="fa-regular fa-heart pl-2"></i>200</span>
+                    </div>
+                    <div class="py-2">
+                        <h4 class="text-2xl font-bold">Cap For Hockeys</h4>
+                        <p>It seems like your input "hokey club" might <br>be a typo or an
+                          incomplete query. </p>
+                    </div>
+                    <div class=" lg:flex gap-8">
+                        <h5 class="text-[#FF4240] text-xl font-bold">Price-$22.00</h5>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee: Free
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+             <!-- product4 -->
+            <div class="lg:flex flex-row-reverse lg:flex-row gap-4 p-8 items-center text-center border-solid border-2 border-gray-200 rounded-xl">
+                <div class="flex justify-center">
+                    <img src="Images/8.png" alt="">
+                </div>
+                <div>
+                    <div class="rating gap-2">
+                        <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                        /> <span class="mt-1">5.0 <i class="fa-solid fa-eye pl-2"></i> 20 <i class="fa-regular fa-heart pl-2"></i>200</span>
+                    </div>
+                    <div class="py-2">
+                        <h4 class="text-2xl font-bold">World Cup Jersey</h4>
+                        <p>It seems like your input "hokey club" might <br>be a typo or an
+                          incomplete query. </p>
+                    </div>
+                    <div class=" lg:flex gap-8">
+                        <h5 class="text-[#FF4240] text-xl font-bold">Price-$22.00</h5>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee: Free
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+             <!-- product5 -->
+            <div class="lg:flex flex-row-reverse lg:flex-row gap-4 p-8 items-center text-center border-solid border-2 border-gray-200 rounded-xl">
+                <div class="flex justify-center">
+                    <img src="Images/9.png" alt="">
+                </div>
+                <div>
+                    <div class="rating gap-2">
+                        <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                        /> <span class="mt-1">5.0 <i class="fa-solid fa-eye pl-2"></i> 20 <i class="fa-regular fa-heart pl-2"></i>200</span>
+                    </div>
+                    <div class="py-2">
+                        <h4 class="text-2xl font-bold">World Cup Hamlet</h4>
+                        <p>It seems like your input "hokey club" might <br>be a typo or an
+                          incomplete query. </p>
+                    </div>
+                    <div class=" lg:flex gap-8">
+                        <h5 class="text-[#FF4240] text-xl font-bold">Price-$22.00</h5>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee: Free
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+             <!-- product6 -->
+            <div class="lg:flex flex-row-reverse lg:flex-row gap-4 p-8 items-center text-center border-solid border-2 border-gray-200 rounded-xl">
+                <div class="flex justify-center">
+                    <img src="Images/10.png" alt="">
+                </div>
+                <div>
+                    <div class="rating gap-2">
+                        <input
+                            type="radio"
+                            name="rating-2"
+                            class="mask mask-star-2 bg-orange-400"
+                        /> <span class="mt-1">5.0 <i class="fa-solid fa-eye pl-2"></i> 20 <i class="fa-regular fa-heart pl-2"></i>200</span>
+                    </div>
+                    <div class="py-2">
+                        <h4 class="text-2xl font-bold">World Cup Flags Football</h4>
+                        <p>It seems like your input "hokey club" might <br>be a typo or an
+                          incomplete query. </p>
+                    </div>
+                    <div class=" lg:flex gap-8">
+                        <h5 class="text-[#FF4240] text-xl font-bold">Price-$22.00</h5>
+                        <p class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Delivery Fee: Free
+                        </p>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+<!-- Clients Question -->
+      <section class="p-[32px]">
+        <div class="text-center mt-12 text-center border-dashed border-b-2 border-t-2 p-10">
+            <h2 class="text-2xl lg:text-5xl font-bold mb-[24px]">Clients Question</h2>
+            <p class="text-base font-medium text-[#13131899] mt-6"> It seems like your input "hokey club" might be a typo or an incomplete query. If you have a specific question <br />or topic related to "hockey" or "club" that you'd like </p>
+        </div>
+        <div class="mt-[112px] flex flex-col lg:flex-row ">
+            <div class="w-full lg:w-[35%]">
+                <img src="Images/11.png" alt="">
+            </div>
+            <div class="w-full lg:w-[65%] space-y-[10px]">
+                <div class="collapse collapse-plus ">
+                    <input type="radio" name="my-accordion-3" checked="checked" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Our Equipment
+                    </div>
+                    <div class="collapse-content"> 
+                      <p> It seems like your input "hokey club" might be a typo or an
+                        incomplete query. If you have a specific question <br />or topic
+                        related to "hockey" or "club" that you'd like</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="collapse collapse-plus">
+                    <input type="radio" name="my-accordion-3" checked="checked" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Hockey Training
+                    </div>
+                    <div class="collapse-content"> 
+                      <p> It seems like your input "hokey club" might be a typo or an
+                        incomplete query. If you have a specific question <br />or topic
+                        related to "hockey" or "club" that you'd like</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="collapse collapse-plus">
+                    <input type="radio" name="my-accordion-3" checked="checked" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Private Lessons
+                    </div>
+                    <div class="collapse-content"> 
+                      <p> It seems like your input "hokey club" might be a typo or an
+                        incomplete query. If you have a specific question <br />or topic
+                        related to "hockey" or "club" that you'd like</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="collapse collapse-plus">
+                    <input type="radio" name="my-accordion-3" checked="checked" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Ski Touring
+                    </div>
+                    <div class="collapse-content"> 
+                      <p> It seems like your input "hokey club" might be a typo or an
+                        incomplete query. If you have a specific question <br />or topic
+                        related to "hockey" or "club" that you'd like</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="collapse collapse-plus">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Booking
+                    </div>
+                    <div class="collapse-content"> 
+                      <p> It seems like your input "hokey club" might be a typo or an
+                        incomplete query. If you have a specific question <br />or topic
+                        related to "hockey" or "club" that you'd like</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="collapse collapse-plus">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Pricings
+                    </div>
+                    <div class="collapse-content"> 
+                      <p> It seems like your input "hokey club" might be a typo or an
+                        incomplete query. If you have a specific question <br />or topic
+                        related to "hockey" or "club" that you'd like</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+      <!-- Get In Touch -->
+      <section class="my-24 container mx-auto">
+        <div class="text-center border-dashed border-b-2 border-t-2 p-10 ">
+            <h1 class="text-2xl lg:text-5xl lg:text-5xl font-bold pb-10">
+                Get In Touch
+            </h1>
+            <p>
+                It seems like there might be a typo or an error in your query. If you're <br> asking about getting in form or improving performance in hockey.
+            </p>
+        </div>
+        <div class="lg:flex flex-row justify-center items-center">
+            <div class=" lg:w-[40%] border-2 rounded-2xl bg-white drop-shadow-md  p-10 space-y-8 ">
+                <div class="lg:w-full w-[95%] bg-[#BCED6D1A] p-6 space-y-3 rounded-2xl">
+                    <img class="pt-5" src="Images/Group 1171275317.png" alt="">
+                    <p >Phone Number : 
+                        </p>
+                        <p class="lg:text-xl font-bold">(+62) 123-321-543 </p>
+                </div>
+                <div class="lg:w-full w-[95%]  bg-[#FDDD5F1A] p-6 space-y-3 rounded-2xl">
+                    <img class="pt-5" src="Images/Group 1171275318.png" alt="">
+                    <p >Email : 
+                        </p>
+                        <p class="lg:text-xl font-bold">hockeys@support.com</p>
+                </div>
+                <div class="lg:w-full w-[95%]  bg-[#629CF31A] p-6 space-y-3 rounded-2xl">
+                    <img class="pt-5" src="Images/Group 1171275321.png" alt="">
+                    <p >Location :  
+                        </p>
+                        <p class="lg:text-xl font-bold">152/1 Mohakhali Wireless Gate</p>
+                </div>
+            </div>
+            <div class="lg:w-[60%]">
+                <div class="card shrink-0 w-full">
+                    <form class="card-body">
+                        <div class="lg:flex flex-row gap-4">
+                            <div class=" flex-1 form-control">
+                                <label class="label"> <span class="test-2xl font-extrabold">Your Name</span></label>
+                                <input
+                                    type="email"
+                                    placeholder="Enter your Name"
+                                    class="input input-bordered bg-[#F3F3F3]"
+                                    required
+                                />
+                            </div>
+                            <div class=" flex-1 form-control">
+                                <label class="label"> <span class="test-2xl font-extrabold">Your Email</span></label>
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    class="input input-bordered bg-[#F3F3F3]"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="lg:flex flex-row gap-4">
+                            <div class=" flex-1 form-control">
+                                <label class="label"> <span class="test-2xl font-extrabold">Subject</span></label>
+                                <input
+                                    type="email"
+                                    placeholder="Enter your subject"
+                                    class="input input-bordered bg-[#F3F3F3]"
+                                    required
+                                />
+                            </div>
+                            <div class=" flex-1 form-control">
+                                <label class="label"> <span class="test-2xl font-extrabold">Phone Number</span></label>
+                                <input
+                                    type="email"
+                                    placeholder="Enter your phone Number"
+                                    class="input input-bordered bg-[#F3F3F3]"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <label class="label"> <span class="test-2xl font-extrabold">Message</span></label>
+                        <textarea
+                            class="textarea textarea-bordered h-[40vh] mt-5 bg-[#F3F3F3]"
+                            placeholder="Write your Message"
+                        ></textarea>
+
+                        <div class="form-control mt-6">
+                            <button
+                                class="btn  bg-[#FF4240] text-white font-semibold border-0"
+                            >
+                            Send Message
+                            </button>
+                        </div>
+                    </form>
+
+            </div>
+
+        </div>
+    </section>
+      <!-- form section -->
+      <section class="bg-[#13131808] mt-[48px] p-[35px]">
+        <div class="text-center">
+            <h2 class="text-2xl lg:text-4xl font-bold">Social Media</h2>
+        </div>
+        <div class="flex justify-center mt-2">
+            <img src="Images/Social (1).png" alt="">
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- footer section -->
+    <footer class="mt-[48px] ">
+        <div class="footer lg:flex flex-row text-center  justify-around items-center p-10 bg-black text-white  text-base-content lg:h-[40vh]">
+            <aside class="space-y-5 ">
+                <h1 class="text-3xl font-extrabold">Get In Touch</h1>
+                <p>If you're interested in joining hockey, <br> it's  interested in joining at the recreational or competitive level,</p>
+                <h3 class="flex gap-2"><img src="Images/Frame.png" alt=""> imghockeys@support.com</h3>
+                <h3 class="flex gap-2"><img src="Images/Frame (1).png" alt=""> (+62) 123-321-543</h3>
+              </aside> 
+             <div class="flex gap-10 lg:gap-56">
+                <nav>
+                    <div class="flex flex-col space-y-5">
+                        <header class="footer-title">Company</header> 
+                        <a class="link link-hover">About us</a>
+                        <a class="link link-hover">Leadership</a>
+                        <a class="link link-hover">Careers</a>
+                        <a class="link link-hover">News & Article</a>
+                        <a class="link link-hover">Legal Notice</a></div>
+                  </nav> 
+                  <nav>
+                    <div class="flex flex-col space-y-5">
+                        <header class="footer-title">Support</header> 
+                    <a class="link link-hover">Help Center</a>
+                    <a class="link link-hover">FAQ</a>
+                    <a class="link link-hover">Ticket Support</a>
+                    <a class="link link-hover">Contact Us</a>
+                    </div>
+                  </nav>
+             </div> 
+              <nav>
+                <div class="flex flex-col items-center space-y-5 justify-center ml-10">
+                    <header class="footer-title">Services</header> 
+                <a class="link link-hover">Academy</a>
+                <a class="link link-hover">Group Lesson</a>
+                <a class="link link-hover">Private Lesson</a>
+                <a class="link link-hover">Hockeys for kids</a>
+                <a class="link link-hover"> Hockeys for Adult</a>
+                </div>
+              </nav>
+        </div>
+      </footer>
+      <!-- footer end -->
+  </body>
+</html>
